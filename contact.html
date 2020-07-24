@@ -88,29 +88,28 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form target="_blank" action="https://formspree.io/xeqraloo" method="POST"
+                    <form id="myform" method="POST"
                         class="comment-form contact-form">
                         <div class="row">
                             <div class="col-lg-4">
                                 İsim Soyisim:
-                                <input type="text" name="İsim Soyisim" required type="text">
+                                <input type="text" name="from_name" required type="text">
                             </div>
                             <div class="col-lg-4">
                                 E-mail:
-                                <input type="email" name="E-mail" required type="text">
+                                <input type="text" name="sender_email" required type="text">
                             </div>
                             <div class="col-lg-4">
                                 Telefon:
-                                <input type="phone" name="Telefon" required type="text">
+                                <input type="text" name="phone" required type="text">
                             </div>
                             <div class="col-lg-12 text-center">
                                 Size nasıl yardımcı olabiliriz ?
-                                <textarea name="İleti" required type="text"></textarea>
+                                <textarea type="text" name="message_html" required type="text"></textarea>
                                 <button type="submit" class="site-btn">Gönder</button>
                                 <input type="hidden" name="_language" value="tr" />
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -239,6 +238,13 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mail.js"></script>
+    <script type="text/javascript" src="js/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_uCDSDkNgPMXlhQgsqT9Uh");
+        })();
+    </script>
 
     <script type="text/javascript" src="js/floating-wpp.js"></script>
     <script type="text/javascript">
